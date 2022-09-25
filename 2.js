@@ -2,13 +2,13 @@
 Задание 1
 Создать произвольную переменную, присвоить ей значение. C помощью if написать условие: если переменная равна “hidden”, присвоить ей значение “visible”, иначе - “hidden”.
 */
-// let x = 1
-// if (x === "hidden"){
-//     x = "visible"
-// } else {
-//     x = "hidden"
-// }
-// console.log(x)
+ let x = 1
+ if (x === "hidden"){
+     x = "visible"
+ } else {
+     x = "hidden"
+ }
+ console.log(x)
 
 
 
@@ -21,15 +21,15 @@
 - если больше нуля - используя оператор “присвоение”, переменную умножить на 10 (использовать краткую запись).
 */
 
-// let s = 2
-// if (s === 0){
-//     s = 1
-// } else if (s < 0){
-//     s = "less then zero"
-// } else{
-//     s *= 10
-// } 
-// console.log(s)
+ let s = 2
+ if (s === 0){
+     s = 1
+ } else if (s < 0){
+     s = "less then zero"
+ } else{
+     s *= 10
+ } 
+ console.log(s)
 
 
 
@@ -41,9 +41,9 @@
 Выполните это задание, используя тернарный оператор (: ?)
 */
 
-// let number = prompt("Введите число")
-// let result = number < 5 ? 0 : 1
-// console.log(result)
+ let number = prompt("Введите число")
+ let result = number < 5 ? 0 : 1
+ console.log(result)
 
 
 
@@ -53,15 +53,15 @@
 * предусмотреть вариант ввода одинаковых чисел
 */
 
-// let number1 = Number(prompt('введите число'));
-// let number2 = Number(prompt('введите число'));
-// if (number1 < number2){
-//     console.log(number2)
-// } else if(number1 > number2){
-//     console.log(number1)
-// } else{
-//     console.log('равны')
-// }
+ let number1 = Number(prompt('введите число'));
+ let number2 = Number(prompt('введите число'));
+ if (number1 < number2){
+     console.log(number2)
+ } else if(number1 > number2){
+     console.log(number1)
+ } else{
+     console.log('равны')
+ }
 
 
 
@@ -70,13 +70,13 @@
 Определить, является ли введенное пользователем число num1 кратным введенному числу num2. Обе переменные запрашиваем у пользователя, ответ выводим в консоль.
 */
 
-// let number1 = Number(prompt('введите число'));
-// let number2 = Number(prompt('введите число'));
-// if (number1 % number2 === 0){
-//     console.log('кратно')
-// } else{
-//     console.log('не кртано')
-// }
+ let number1 = Number(prompt('введите число'));
+ let number2 = Number(prompt('введите число'));
+ if (number1 % number2 === 0){
+     console.log('кратно')
+ } else{
+     console.log('не кртано')
+ }
 
 
 
@@ -86,16 +86,16 @@
 Если средний балл 1-4 - вывести в консоль "Двоечник, иди учись!", если 5-8 - "Неплохо, но давай еще поднажмем!", если 9-10 - "Ого, да ты настоящий отличник!" (можно другие фразы - по желанию).
 */
 
-// let sb = prompt('Введите свой средний балл')
-// if (sb >= 1 && sb <= 4){
-//     console.log("Двоечник, иди учись!")
-// } else if (sb >= 5 && sb <=8){
-//     console.log("Неплохо, но давай еще поднажмем!")
-// } else if (sb >= 9 && sb <= 10){
-//     console.log("Ого, да ты настоящий отличник!")
-// } else{
-//     console.log("Введи нормальное число!")
-// }
+ let sb = prompt('Введите свой средний балл')
+ if (sb >= 1 && sb <= 4){
+     console.log("Двоечник, иди учись!")
+ } else if (sb >= 5 && sb <=8){
+     console.log("Неплохо, но давай еще поднажмем!")
+ } else if (sb >= 9 && sb <= 10){
+     console.log("Ого, да ты настоящий отличник!")
+ } else{
+     console.log("Введи нормальное число!")
+ }
 
 
 
@@ -111,18 +111,18 @@
 - 0 во всех других случаях.
 */
 
-// let ex = prompt("Введи свой балл за экзамен")
-// let project = prompt("Сколько ты выполнил проектов?")
+let ex = prompt("Введи свой балл за экзамен")
+let project = prompt("Сколько ты выполнил проектов?")
 
-// if (ex >= 90 || project >= 10){
-//     console.log(100)
-// } else if (ex >= 75 && project >= 5){
-//     console.log(90)
-// } else if (ex >= 50 && project >= 2){
-//     console.log(75)
-// } else{
-//     console.log(0)
-// }
+if (ex >= 90 || project >= 10){
+    console.log(100)
+} else if (ex >= 75 && project >= 5){
+    console.log(90)
+} else if (ex >= 50 && project >= 2){
+    console.log(75)
+} else{
+    console.log(0)
+}
 
 
 
@@ -132,17 +132,17 @@
 Количество дней, на которые нужно арендовать авто, запрашиваются с помощью prompt. Напишите программу, рассчитывающую общую стоимость аренды на запрашиваемое количество дней.
 */
 
-// let rent = prompt("На сколько хотите взять авто в аренду?")
-// let dayCost = 40
-// let discount = 0
-// if (rent >= 7){
-//     discount = 50
-// } else if (rent >= 3){
-//     discount = 20
-// } 
-// let cost = rent * dayCost - discount
-// // console.log("Итоговая стоимость составит: " + cost)
-// console.log(`Итоговая стоимость составит: ${cost}`)
+let rent = prompt("На сколько хотите взять авто в аренду?")
+let dayCost = 40
+let discount = 0
+if (rent >= 7){
+    discount = 50
+} else if (rent >= 3){
+    discount = 20
+} 
+let cost = rent * dayCost - discount
+// console.log("Итоговая стоимость составит: " + cost)
+console.log(`Итоговая стоимость составит: ${cost}`)
 
 
 
@@ -152,12 +152,12 @@
 10 раз увеличивать значение этой переменной на 1. Результат вывести в консоль.
 */
 
-// et number = 10;
+et number = 10;
 
-// for (let i = 0; i < 10; i++){ 
-//     number = number + 1
-// }
-//  console.log(number)
+for (let i = 0; i < 10; i++){ 
+    number = number + 1
+}
+ console.log(number)
 
 
 
@@ -168,15 +168,15 @@
 - проверять, равно ли это число 10. Если равно, выводить "Равно 10". Иначе выводить "Не равно 10"
 */
 
-// for (let i = 0; i < 10; i = i + 2){
-//     let number = Number(prompt('введите число'));
+for (let i = 0; i < 10; i = i + 2){
+    let number = Number(prompt('введите число'));
 
-//     if (number === 10){
-//         console.log('pавно 10')
-//     } else {
-//         console.log('не равно 10')
-//     }
-// }
+    if (number === 10){
+        console.log('pавно 10')
+    } else {
+        console.log('не равно 10')
+    }
+}
 
 
 
@@ -186,11 +186,11 @@
 * Задавать количество чисел, которые нужно вывести, при помощи функции prompt.
 */
 
-// let number = Number(prompt ())
+let number = Number(prompt ())
 
-// for (let i = 0; i < number; i++){ 
-//     console.log(i ** 2)
-// }
+for (let i = 0; i < number; i++){ 
+    console.log(i ** 2)
+}
 
 
 
@@ -200,14 +200,14 @@
 При этом вместо чисел, кратных трем, программа должна выводить слово «Fizz», а вместо чисел, кратных пяти, — слово «Buzz». Если число кратно и 3, и 5, то программа должна выводить слово «FizzBuzz»
 */
 
-// for (let i = 0; i < 100; i++){
-//     if(i % 3 === 0 && i % 5 === 0){
-//         console.log('FizzBuzz')
-//     }
-//       else if (i % 3 === 0){
-//         console.log('Fizz')     
-//     } else if (i % 5 === 0){
-//         console.log('Buzz')
-//     } else console.log(i)
+for (let i = 0; i < 100; i++){
+    if(i % 3 === 0 && i % 5 === 0){
+        console.log('FizzBuzz')
+    }
+      else if (i % 3 === 0){
+        console.log('Fizz')     
+    } else if (i % 5 === 0){
+        console.log('Buzz')
+    } else console.log(i)
         
-// }
+}
