@@ -1,118 +1,117 @@
-// /*
-// Задание 1
+/*
+Задание 1
+Перепишите код, заменив цикл for на while, без изменения поведения цикла.
+for (let i = 0; i < 3; i++) {
+alert( `number ${i}!` );
+}
+*/
 
-// Перепишите код, заменив цикл for на while, без изменения поведения цикла.
-// for (let i = 0; i < 3; i++) {
-// alert( `number ${i}!` );
-// }
-// */
+let i = 0
 
-// let i = 0
+while (i < 3) {
+     alert( `number ${i}!` );
+     i += 1
+     }
 
-// while (i < 3) {
-//     alert( `number ${i}!` );
-//     i += 1
-//     }
+/*
+Задание 2
 
-// /*
-// Задание 2
+Перепишите код с использованием тернарного оператора
+let male = true;
+let gender;
+if (male) {
+gender = 'man';
+} else{
+gender = 'woman'
+}
+*/
 
-// Перепишите код с использованием тернарного оператора
-// let male = true;
-// let gender;
-// if (male) {
-// gender = 'man';
-// } else{
-// gender = 'woman'
-// }
-// */
+let male = true;
 
-// let male = true;
+let gender = (male === true) ? 'man' : 'woman';
+console.log(gender)
 
-// let gender = (male === true) ? 'man' : 'woman';
-// console.log(gender)
+/* Задание 3
 
-// /* Задание 3
+Задать массив логических значений (true/false). Например: const roles = [true, false, false, true, false]
+Каждое значение обозначает админ (true) или пользователь (false).
+Из этого массива сформировать массив объектов - roles, такой же длины, как и заданный массив.
+У каждого объекта должно быть одно поле, role, которое равно admin, если значение в заданном массиве - true, и user, если значение в заданном массиве - false.
+Т.е. из
+[true, false, false]
+должно получиться
+[{ role: 'admin' }, { role: 'user' }, { role: 'user' } ]
+*/
 
-// Задать массив логических значений (true/false). Например: const roles = [true, false, false, true, false]
-// Каждое значение обозначает админ (true) или пользователь (false).
-// Из этого массива сформировать массив объектов - roles, такой же длины, как и заданный массив.
-// У каждого объекта должно быть одно поле, role, которое равно admin, если значение в заданном массиве - true, и user, если значение в заданном массиве - false.
-// Т.е. из
-// [true, false, false]
-// должно получиться
-// [{ role: 'admin' }, { role: 'user' }, { role: 'user' } ]
-// */
+const roles = [true, false, false, true, false]
 
-// const roles = [true, false, false, true, false]
+let rolesNew = []
 
-// let rolesNew = []
+for (let item of roles){
+     if(item === true){
+         rolesNew.push({role: 'admin'})
+     } else {
+         rolesNew.push({role: 'user'})
+     }
+ }
 
-// for (let item of roles){
-//     if(item === true){
-//         rolesNew.push({role: 'admin'})
-//     } else {
-//         rolesNew.push({role: 'user'})
-//     }
-// }
+function calculateSum(number) {
+    let sum = 0;
 
-// // function calculateSum(number) {
-// //     let sum = 0;
+    for (let i = 0; i < number; i++){
+        sum += 1;
+    }
 
-// //     for (let i = 0; i < number; i++){
-// //         sum += 1;
-// //     }
+    return sum;
+}
 
-// //     return sum;
-// // }
+function showMessage() {
+    alert('Подсчитывается другая сумма')
+}
 
-// // function showMessage() {
-// //     alert('Подсчитывается другая сумма')
-// // }
+console.log(calculateSum(10));
+showMessage();
+console.log(calculateSum(20));
 
-// // console.log(calculateSum(10));
-// // showMessage();
-// // console.log(calculateSum(20));
+/*
+Задание 4
 
-// /*
-// Задание 4
+Создайте функцию findPositiveNumbers()
+1) Внутри функции должен определяться массив, например let arr = [5, 4, 3, -3, -10, -1, 8, -20, 0] .
+Функция должна вывести в консоль все положительные числа по одному.
+2) Функция должна не выводить числа в консоль, а составить из них новый массив. В самом конце тела функции - вывести новый массив в консоль.
+3) Функция должна не выводить массив в консоль, а вернуть новый массив из положительных элементов arr.
+4) Изначальный массив arr должен не описываться внутри функции, а поступать в нее как параметр.
+*/
 
-// Создайте функцию findPositiveNumbers()
-// 1) Внутри функции должен определяться массив, например let arr = [5, 4, 3, -3, -10, -1, 8, -20, 0] .
-// Функция должна вывести в консоль все положительные числа по одному.
-// 2) Функция должна не выводить числа в консоль, а составить из них новый массив. В самом конце тела функции - вывести новый массив в консоль.
-// 3) Функция должна не выводить массив в консоль, а вернуть новый массив из положительных элементов arr.
-// 4) Изначальный массив arr должен не описываться внутри функции, а поступать в нее как параметр.
-// */
+let arr = [5, 4, 3, -3, -10, -1, 8, -20, 0]
 
-// let arr = [5, 4, 3, -3, -10, -1, 8, -20, 0]
+function findPositiveNumbers(array){
+    let arr2 = []
+    for (let item of arr){
+        if (item > 0)
+        arr2.push(item)
+    }
+    return arr2
+}
+console.log(findPositiveNumbers(arr))
 
-// function findPositiveNumbers(array){
-//     let arr2 = []
-//     for (let item of arr){
-//         if (item > 0)
-//         arr2.push(item)
-//     }
-//     return arr2
-// }
-// console.log(findPositiveNumbers(arr))
+/*
+Задание 5
 
-// /*
-// Задание 5
+Напишите функцию, которая принимает два параметра: значение и количество элементов. Функция создает новый массив и заполняет его этим значением в указанном количестве.
+Например: из переданных значений ('a', 3) получаем массив ['a', 'a', 'a']
+*/
 
-// Напишите функцию, которая принимает два параметра: значение и количество элементов. Функция создает новый массив и заполняет его этим значением в указанном количестве.
-// Например: из переданных значений ('a', 3) получаем массив ['a', 'a', 'a']
-// */
+function CreateNewArray(text, count){
+    let arr = []
+    for (let i = 0; i < count; i++){
+        arr.push(text)
+    }
 
-// function CreateNewArray(text, count){
-//     let arr = []
-//     for (let i = 0; i < count; i++){
-//         arr.push(text)
-//     }
-
-//     return arr
-// }
-// console.log(CreateNewArray('qwe', 4))
+    return arr
+}
+console.log(CreateNewArray('qwe', 4))
 
 /*
 Задание 6
